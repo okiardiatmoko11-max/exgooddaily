@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exgood Daily</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Exgood<span>Daily</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#pesan">pesan</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="menu-toggle"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Ayo Rawat <span>Sepatumu</span></h1>
+        <p>
+          Jaga kebersihan dan tampilan sepatu kesayanganmu dengan perawatan
+          terbaik dari Exgood Daily.
+        </p>
+        <a href="#pesan" class="cta">Pesan Sekarang</a>
+      </main>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="about-section">
+      <h2><span>Tentang</span> Kami</h2>
+
+      <div class="row">
+        <div class="about-image">
+          <img src="img/tentang-kami.jpeg" alt="Tentang Kami" />
+        </div>
+
+        <div class="content">
+          <h3>Kenapa Memilih Kami?</h3>
+          <p>
+            Exgood Daily adalah layanan perawatan sepatu profesional yang
+            berdedikasi untuk menjaga sepatu Anda tetap bersih, rapi, dan
+            terlihat seperti baru setiap hari. Kami memahami bahwa setiap pasang
+            sepatu memiliki cerita dan nilai tersendiri — karena itu, kami
+            merawatnya dengan hati-hati menggunakan bahan dan teknik terbaik.
+          </p>
+          <p>
+            Dengan tim berpengalaman dan peralatan modern, kami siap memberikan
+            hasil maksimal mulai dari deep cleaning, repaint, hingga sole
+            repair. Kepuasan pelanggan adalah prioritas kami, karena kami
+            percaya bahwa sepatu bersih bukan hanya soal tampilan, tetapi juga
+            rasa percaya diri.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Menu Section Start -->
+    <section id="menu" class="menu-section">
+      <h2><span>Menu</span> Treatment</h2>
+
+      <div class="menu-container">
+        <div class="menu-item">
+          <h3>Deep Cleaning</h3>
+          <p>Pembersihan menyeluruh dari outsole, midsole, upper & insole.</p>
+          <span class="price">Rp 25.000</span>
+        </div>
+
+        <div class="menu-item">
+          <h3>Repaint</h3>
+          <p>Pewarnaan ulang sepatu.</p>
+          <span class="price">Start Rp 30.000</span>
+        </div>
+
+        <div class="menu-item">
+          <h3>Unyellowing</h3>
+          <p>Memutihkan kembali outsole yang menguning.</p>
+          <span class="price">Start Rp 30.000</span>
+        </div>
+
+        <div class="menu-item">
+          <h3>Fast Clean</h3>
+          <p>Pembersihan ringan dari outsole, midsole & upper.</p>
+          <span class="price">Rp 20.000</span>
+        </div>
+
+        <div class="menu-item">
+          <h3>Repair</h3>
+          <p>Reglue / menjahit sepatu.</p>
+          <span class="price">Start Rp 20.000</span>
+        </div>
+
+        <div class="menu-item">
+          <h3>Hard Cleaning</h3>
+          <p>Pembersihan mendalam seluruh bagian sepatu termasuk insole.</p>
+          <span class="price">Rp 35.000</span>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section End -->
+
+    <!-- PESAN SECTION -->
+    <section class="pesan" id="pesan">
+      <h2>Pesan <span>Sekarang</span></h2>
+
+      <div class="pesan-container">
+        <div class="pesan-form">
+          <h3>Form Pesanan</h3>
+          <form action="#" method="post">
+            <input
+              type="text"
+              name="nama"
+              placeholder="Nama Lengkap"
+              required
+            />
+            <input
+              type="text"
+              name="produk"
+              placeholder="Nama Produk"
+              required
+            />
+            <input
+              type="tel"
+              name="nomor"
+              placeholder="No HP / WhatsApp"
+              required
+            />
+            <textarea
+              name="pesan"
+              rows="4"
+              placeholder="Pesan atau pesanan..."
+              required
+            ></textarea>
+            <button type="submit">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- PESAN SECTION END -->
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <h2>Kontak <span>Kami</span></h2>
+
+      <div class="contact-container">
+        <!-- MAP -->
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d494.1142888608026!2d110.7617001!3d-7.7988967!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a3705f3b2e845%3A0x5829c9c8f27ba0d1!2sex%20good!5e0!3m2!1sid!2sid!4v1762319040241!5m2!1sid!2sid"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info">
+          <h3>Hubungi Kami</h3>
+          <p><i class="fas fa-phone-alt"></i> 0882-0069-28379 (Oki)</p>
+          <p>
+            <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/62882006928379" target="_blank"
+              >Chat via WhatsApp</a
+            >
+          </p>
+          <p>
+            <i class="fab fa-instagram"></i>
+            <a href="https://www.instagram.com/ex.gooddaily_" target="_blank"
+              >@ex.gooddaily_</a
+            >
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:exgooddaily@gmail.com">exgooddaily@gmail.com</a>
+          </p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Pungsari, Jatingarang, Kec.
+            Weru, Kabupaten Sukoharjo, Jawa Tengah
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT SECTION END -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <p>&copy; 2025 Exgood Daily. All Rights Reserved.</p>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Feather Icons + Menu Toggle -->
+    <script>
+      feather.replace();
+
+      const navbarNav = document.querySelector(".navbar-nav");
+      const menuToggle = document.querySelector("#menu-toggle");
+
+      menuToggle.onclick = (e) => {
+        e.preventDefault();
+        navbarNav.classList.toggle("active");
+      };
+    </script>
+    <div
+      id="search-box"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      "
+    >
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Cari..."
+        style="padding: 1rem; font-size: 1.5rem; width: 50%; border-radius: 8px"
+      />
+    </div>
+
+    <!-- My JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

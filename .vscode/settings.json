@@ -1,0 +1,5 @@
+{
+  "git.useCommitInputAsStashMessage": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true
+}
