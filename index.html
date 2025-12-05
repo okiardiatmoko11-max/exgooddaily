@@ -134,7 +134,11 @@
       <div class="pesan-container">
         <div class="pesan-form">
           <h3>Form Pesanan</h3>
-          <form action="#" method="post">
+          <form
+            id="pesanForm"
+            action="https://formspree.io/f/xldoqdgq"
+            method="POST"
+          >
             <input
               type="text"
               name="nama"
@@ -144,7 +148,7 @@
             <input
               type="text"
               name="produk"
-              placeholder="Nama Produk"
+              placeholder="jenis threatment"
               required
             />
             <input
@@ -161,6 +165,7 @@
             ></textarea>
             <button type="submit">Kirim Pesan</button>
           </form>
+          <p id="pesanStatus" style="margin-top: 1rem; display: none"></p>
         </div>
       </div>
     </section>

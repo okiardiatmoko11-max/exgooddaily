@@ -45,3 +45,44 @@ searchBtn.addEventListener("click", function (e) {
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape") searchBox.style.display = "none";
 });
+const form = document.getElementById("pesanForm");
+const status = document.getElementById("pesanStatus");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault(); // hentikan submit default
+
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+    method: "POST",
+    body: formData,
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then((response) => {
+      if (response.ok) {
+        status.style.display = "block";
+        status.style.color = "green";
+        status.textContent = "Pesan berhasil dikirim!";
+        form.reset();
+      } else {
+        response.json().then((data) => {
+          status.style.display = "block";
+          status.style.color = "red";
+          if (data.errors) {
+            status.textContent = data.errors
+              .map((error) => error.message)
+              .join(", ");
+          } else {
+            status.textContent = "Gagal mengirim pesan.";
+          }
+        });
+      }
+    })
+    .catch((error) => {
+      status.style.display = "block";
+      status.style.color = "red";
+      status.textContent = "Terjadi kesalahan. Silakan coba lagi.";
+    });
+});
